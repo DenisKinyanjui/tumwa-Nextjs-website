@@ -94,7 +94,7 @@ export default function BlogPage() {
       {/* Header */}
       <section className="bg-[#0F172A] pt-20 pb-24">
         <div className="max-w-6xl mx-auto px-5">
-          <p className="text-[#FF6F3C] text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-[#F46525] text-sm font-semibold uppercase tracking-widest mb-3">
             Blog
           </p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-5 max-w-2xl leading-tight">
@@ -121,7 +121,7 @@ export default function BlogPage() {
               >
                 {/* Cover placeholder */}
                 <div className="h-48 bg-gradient-to-br from-[#0F172A] to-[#1E293B] relative flex items-end p-6">
-                  <span className="inline-block px-3 py-1 bg-[#FF6F3C] text-white text-xs font-semibold rounded-full">
+                  <span className="inline-block px-3 py-1 bg-[#F46525] text-white text-xs font-semibold rounded-full">
                     {post.category}
                   </span>
                 </div>
@@ -131,7 +131,7 @@ export default function BlogPage() {
                     <span>·</span>
                     <span>{post.readTime}</span>
                   </div>
-                  <h2 className="text-[#0F172A] font-extrabold text-xl leading-snug mb-3 group-hover:text-[#FF6F3C] transition-colors">
+                  <h2 className="text-[#0F172A] font-extrabold text-xl leading-snug mb-3 group-hover:text-[#F46525] transition-colors">
                     <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                   </h2>
                   <p className="text-slate-500 text-sm leading-relaxed mb-5 line-clamp-3">
@@ -139,7 +139,7 @@ export default function BlogPage() {
                   </p>
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6F3C] hover:gap-3 transition-all"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#F46525] hover:gap-3 transition-all"
                   >
                     Read article
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -168,7 +168,7 @@ export default function BlogPage() {
                       <span>·</span>
                       <span>{post.readTime}</span>
                     </div>
-                    <h2 className="text-[#0F172A] font-bold text-lg mb-2 group-hover:text-[#FF6F3C] transition-colors">
+                    <h2 className="text-[#0F172A] font-bold text-lg mb-2 group-hover:text-[#F46525] transition-colors">
                       <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                     </h2>
                     <p className="text-slate-500 text-sm leading-relaxed line-clamp-2">
@@ -178,7 +178,7 @@ export default function BlogPage() {
                   <div className="flex items-center sm:items-end">
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="text-sm font-semibold text-[#FF6F3C] hover:underline whitespace-nowrap"
+                      className="text-sm font-semibold text-[#F46525] hover:underline whitespace-nowrap"
                     >
                       Read →
                     </Link>
@@ -197,7 +197,7 @@ export default function BlogPage() {
             {posts.map((post) => (
               <article key={post.slug} className="mb-20 last:mb-0">
                 <div className="mb-8">
-                  <span className="inline-block px-3 py-1 bg-[#FF6F3C]/10 text-[#FF6F3C] text-xs font-semibold rounded-full mb-4">
+                  <span className="inline-block px-3 py-1 bg-[#F46525]/10 text-[#F46525] text-xs font-semibold rounded-full mb-4">
                     {post.category}
                   </span>
                   <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] mb-4 leading-tight">
@@ -229,7 +229,7 @@ export default function BlogPage() {
                   ))}
                 </div>
                 <div className="mt-10 pt-8 border-t border-slate-200">
-                  <div className="bg-[#FF6F3C]/5 border border-[#FF6F3C]/20 rounded-2xl p-6">
+                  <div className="bg-[#F46525]/5 border border-[#F46525]/20 rounded-2xl p-6">
                     <p className="text-[#0F172A] font-semibold mb-2">
                       Ready to try Tumwa?
                     </p>
@@ -238,7 +238,7 @@ export default function BlogPage() {
                     </p>
                     <Link
                       href="/#download"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#FF6F3C] text-white text-sm font-semibold rounded-xl hover:bg-[#e55a28]"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#F46525] text-white text-sm font-semibold rounded-xl hover:bg-[#e55a28]"
                     >
                       Download Tumwa
                     </Link>

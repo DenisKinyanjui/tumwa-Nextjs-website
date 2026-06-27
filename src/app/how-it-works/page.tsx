@@ -136,7 +136,7 @@ export default function HowItWorksPage() {
       {/* Page Hero */}
       <section className="bg-[#0F172A] pt-20 pb-24">
         <div className="max-w-6xl mx-auto px-5">
-          <p className="text-[#FF6F3C] text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-[#F46525] text-sm font-semibold uppercase tracking-widest mb-3">
             How It Works
           </p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-5 max-w-2xl">
@@ -168,7 +168,7 @@ export default function HowItWorksPage() {
                 key={type.title}
                 className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm text-center"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#FF6F3C]/10 flex items-center justify-center text-[#FF6F3C] mb-4 mx-auto">
+                <div className="w-12 h-12 rounded-xl bg-[#F46525]/10 flex items-center justify-center text-[#F46525] mb-4 mx-auto">
                   {type.icon}
                 </div>
                 <h3 className="text-[#0F172A] font-semibold text-sm mb-1.5">
@@ -187,8 +187,8 @@ export default function HowItWorksPage() {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-5">
           <div className="flex items-center gap-3 mb-12">
-            <div className="w-10 h-10 rounded-xl bg-[#FF6F3C]/10 flex items-center justify-center">
-              <svg className="w-5 h-5 text-[#FF6F3C]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <div className="w-10 h-10 rounded-xl bg-[#F46525]/10 flex items-center justify-center">
+              <svg className="w-5 h-5 text-[#F46525]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -209,7 +209,7 @@ export default function HowItWorksPage() {
                 className="flex gap-6 items-start"
               >
                 <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-[#0F172A] flex items-center justify-center">
-                  <span className="text-[#FF6F3C] font-black text-base">
+                  <span className="text-[#F46525] font-black text-base">
                     {step.number}
                   </span>
                 </div>
@@ -231,8 +231,8 @@ export default function HowItWorksPage() {
       <section className="py-24 bg-[#0F172A]">
         <div className="max-w-6xl mx-auto px-5">
           <div className="flex items-center gap-3 mb-12">
-            <div className="w-10 h-10 rounded-xl bg-[#2E8B57]/20 flex items-center justify-center">
-              <svg className="w-5 h-5 text-[#2E8B57]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <div className="w-10 h-10 rounded-xl bg-[#248249]/20 flex items-center justify-center">
+              <svg className="w-5 h-5 text-[#248249]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
               </svg>
             </div>
@@ -249,8 +249,8 @@ export default function HowItWorksPage() {
           <div className="space-y-6">
             {runnerSteps.map((step) => (
               <div key={step.number} className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-[#2E8B57]/20 flex items-center justify-center">
-                  <span className="text-[#2E8B57] font-black text-base">
+                <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-[#248249]/20 flex items-center justify-center">
+                  <span className="text-[#248249] font-black text-base">
                     {step.number}
                   </span>
                 </div>

@@ -14,7 +14,7 @@ export default function RunnerSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — copy */}
           <div>
-            <p className="text-[#2E8B57] text-sm font-semibold uppercase tracking-widest mb-3">
+            <p className="text-[#248249] text-sm font-semibold uppercase tracking-widest mb-3">
               For Runners
             </p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
@@ -36,7 +36,7 @@ export default function RunnerSection() {
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/become-a-runner"
-                className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#2E8B57] hover:bg-[#236b42] text-white font-semibold rounded-xl shadow-md"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#248249] hover:bg-[#236b42] text-white font-semibold rounded-xl shadow-md"
               >
                 Become a Runner
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -67,7 +67,7 @@ export default function RunnerSection() {
             </div>
 
             {/* Requirements */}
-            <div className="bg-[#2E8B57]/10 border border-[#2E8B57]/25 rounded-2xl p-6">
+            <div className="bg-[#248249]/10 border border-[#248249]/25 rounded-2xl p-6">
               <h3 className="text-white font-semibold mb-4">
                 What you need to get started
               </h3>
@@ -79,8 +79,8 @@ export default function RunnerSection() {
                   "Willingness to move — on foot, bike, or matatu",
                 ].map((req) => (
                   <li key={req} className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-[#2E8B57]/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <svg className="w-3 h-3 text-[#2E8B57]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <div className="w-5 h-5 rounded-full bg-[#248249]/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-[#248249]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                       </svg>
                     </div>

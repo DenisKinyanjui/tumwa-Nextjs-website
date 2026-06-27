@@ -2,7 +2,7 @@ import AppDownloadButtons from "./AppDownloadButtons";
 
 export default function CTASection() {
   return (
-    <section className="py-24 bg-[#FF6F3C] relative overflow-hidden" id="download">
+    <section className="py-24 bg-[#F46525] relative overflow-hidden" id="download">
       {/* Background pattern */}
       <div
         className="absolute inset-0 opacity-10"

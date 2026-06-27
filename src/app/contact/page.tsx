@@ -55,7 +55,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="bg-[#0F172A] pt-20 pb-24">
         <div className="max-w-6xl mx-auto px-5">
-          <p className="text-[#FF6F3C] text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-[#F46525] text-sm font-semibold uppercase tracking-widest mb-3">
             Contact
           </p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-5 max-w-xl leading-tight">
@@ -81,7 +81,7 @@ export default function ContactPage() {
               <div className="space-y-5 mb-10">
                 {contactInfo.map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#FF6F3C]/10 flex items-center justify-center text-[#FF6F3C] flex-shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[#F46525]/10 flex items-center justify-center text-[#F46525] flex-shrink-0">
                       {item.icon}
                     </div>
                     <div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
                       {item.href ? (
                         <a
                           href={item.href}
-                          className="text-[#0F172A] font-medium text-sm hover:text-[#FF6F3C]"
+                          className="text-[#0F172A] font-medium text-sm hover:text-[#F46525]"
                         >
                           {item.value}
                         </a>
@@ -106,7 +106,7 @@ export default function ContactPage() {
               {/* Response time */}
               <div className="bg-[#F8FAFC] rounded-2xl p-5 border border-slate-100">
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-2 h-2 rounded-full bg-[#2E8B57]" />
+                  <div className="w-2 h-2 rounded-full bg-[#248249]" />
                   <p className="text-[#0F172A] font-semibold text-sm">
                     Typical response time
                   </p>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                       type="text"
                       autoComplete="name"
                       placeholder="Grace Mwangi"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-[#0F172A] text-sm placeholder:text-slate-400 focus:outline-none focus:border-[#FF6F3C] focus:ring-2 focus:ring-[#FF6F3C]/20 bg-white"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-[#0F172A] text-sm placeholder:text-slate-400 focus:outline-none focus:border-[#F46525] focus:ring-2 focus:ring-[#F46525]/20 bg-white"
                     />
                   </div>
                   <div>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                       type="email"
                       autoComplete="email"
                       placeholder="grace@example.com"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-[#0F172A] text-sm placeholder:text-slate-400 focus:outline-none focus:border-[#FF6F3C] focus:ring-2 focus:ring-[#FF6F3C]/20 bg-white"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 text-[#0F172A] text-sm placeholder:text-slate-400 focus:outline-none focus:border-[#F46525] focus:ring-2 focus:ring-[#F46525]/20 bg-white"
                     />
                   </div>
                 </div>
@@ -168,7 +168,7 @@ export default function ContactPage() {
                   </label>
                   <select
                     id="subject"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-[#0F172A] text-sm focus:outline-none focus:border-[#FF6F3C] focus:ring-2 focus:ring-[#FF6F3C]/20 bg-white appearance-none"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-[#0F172A] text-sm focus:outline-none focus:border-[#F46525] focus:ring-2 focus:ring-[#F46525]/20 bg-white appearance-none"
                   >
                     <option value="">Select a subject…</option>
                     {subjects.map((s) => (
@@ -190,7 +190,7 @@ export default function ContactPage() {
                     id="message"
                     rows={6}
                     placeholder="Tell us what's on your mind. The more detail you give, the faster we can help."
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-[#0F172A] text-sm placeholder:text-slate-400 focus:outline-none focus:border-[#FF6F3C] focus:ring-2 focus:ring-[#FF6F3C]/20 bg-white resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 text-[#0F172A] text-sm placeholder:text-slate-400 focus:outline-none focus:border-[#F46525] focus:ring-2 focus:ring-[#F46525]/20 bg-white resize-none"
                   />
                 </div>
 
@@ -200,7 +200,7 @@ export default function ContactPage() {
                   </p>
                   <button
                     type="submit"
-                    className="px-7 py-3.5 bg-[#FF6F3C] hover:bg-[#e55a28] text-white font-semibold rounded-xl shadow-sm text-sm inline-flex items-center gap-2"
+                    className="px-7 py-3.5 bg-[#F46525] hover:bg-[#e55a28] text-white font-semibold rounded-xl shadow-sm text-sm inline-flex items-center gap-2"
                   >
                     Send message
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

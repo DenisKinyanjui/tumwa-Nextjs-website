@@ -68,16 +68,29 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Problem Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-5">
+      <section className="relative bg-[#0F172A] py-24 overflow-hidden">
+        {/* Background texture */}
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+            backgroundSize: "32px 32px",
+          }}
+        />
+        {/* Gradient blobs */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#F46525] opacity-[0.08] blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#248249] opacity-[0.08] blur-[100px] pointer-events-none" />
+
+        <div className="relative max-w-6xl mx-auto px-5">
           <div className="max-w-xl mb-16">
-            <p className="text-[#FF6F3C] text-sm font-semibold uppercase tracking-widest mb-3">
+            <p className="text-[#F46525] text-sm font-semibold uppercase tracking-widest mb-3">
               The problem
             </p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-4">
               Nairobi is busy. Your time is finite.
             </h2>
-            <p className="text-slate-500 text-lg leading-relaxed">
+            <p className="text-slate-400 text-lg leading-relaxed">
               Most errands don&apos;t need you personally. They just need someone
               who can move — quickly and reliably.
             </p>
@@ -87,15 +100,15 @@ export default function HomePage() {
             {problems.map((problem) => (
               <div
                 key={problem.title}
-                className="rounded-2xl bg-[#F8FAFC] border border-slate-100 p-7"
+                className="rounded-2xl bg-[#1E293B] border border-slate-700 p-7"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#FF6F3C]/10 flex items-center justify-center text-[#FF6F3C] mb-5">
+                <div className="w-12 h-12 rounded-xl bg-[#F46525]/15 flex items-center justify-center text-[#F46525] mb-5">
                   {problem.icon}
                 </div>
-                <h3 className="text-[#0F172A] font-bold text-lg mb-3">
+                <h3 className="text-white font-bold text-lg mb-3">
                   {problem.title}
                 </h3>
-                <p className="text-slate-500 text-base leading-relaxed">
+                <p className="text-slate-400 text-base leading-relaxed">
                   {problem.body}
                 </p>
               </div>
@@ -109,7 +122,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-[#FF6F3C] text-sm font-semibold uppercase tracking-widest mb-3">
+              <p className="text-[#F46525] text-sm font-semibold uppercase tracking-widest mb-3">
                 The solution
               </p>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
@@ -128,19 +141,57 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                { stat: "1,200+", label: "Active users in Nairobi" },
-                { stat: "< 5 min", label: "Average errand pickup time" },
-                { stat: "4.8★", label: "App rating from users" },
-                { stat: "98%", label: "Tasks completed on time" },
+                {
+                  icon: (
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                  ),
+                  title: "Real-time Tracking",
+                  body: "Track your runner from pickup to delivery.",
+                },
+                {
+                  icon: (
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    </svg>
+                  ),
+                  title: "Verified Runners",
+                  body: "Every runner completes identity verification.",
+                },
+                {
+                  icon: (
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                    </svg>
+                  ),
+                  title: "Instant Matching",
+                  body: "Get connected with a nearby runner in minutes.",
+                },
+                {
+                  icon: (
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                    </svg>
+                  ),
+                  title: "Secure Payments",
+                  body: "Pay safely and only release funds after confirmation.",
+                },
               ].map((item) => (
                 <div
-                  key={item.label}
+                  key={item.title}
                   className="bg-[#1E293B] rounded-2xl p-6 border border-slate-700"
                 >
-                  <p className="text-[#FF6F3C] font-extrabold text-3xl mb-1">
-                    {item.stat}
+                  <div className="w-10 h-10 rounded-lg bg-[#F46525]/15 flex items-center justify-center text-[#F46525] mb-3">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-white font-bold text-base mb-1">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    {item.body}
                   </p>
-                  <p className="text-slate-400 text-sm">{item.label}</p>
                 </div>
               ))}
             </div>
@@ -155,7 +206,7 @@ export default function HomePage() {
       <section className="py-24 bg-[#F8FAFC]">
         <div className="max-w-6xl mx-auto px-5">
           <div className="max-w-xl mb-16">
-            <p className="text-[#FF6F3C] text-sm font-semibold uppercase tracking-widest mb-3">
+            <p className="text-[#F46525] text-sm font-semibold uppercase tracking-widest mb-3">
               What people say
             </p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] leading-tight">

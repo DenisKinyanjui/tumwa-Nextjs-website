@@ -28,7 +28,7 @@ export default function HowItWorksSection() {
       <div className="max-w-6xl mx-auto px-5">
         {/* Header */}
         <div className="max-w-xl mb-16">
-          <p className="text-[#FF6F3C] text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-[#F46525] text-sm font-semibold uppercase tracking-widest mb-3">
             How It Works
           </p>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] leading-tight mb-4">
@@ -43,13 +43,13 @@ export default function HowItWorksSection() {
         {/* Steps */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
           {/* Connector line (desktop) */}
-          <div className="hidden md:block absolute top-10 left-[calc(16.67%+2rem)] right-[calc(16.67%+2rem)] h-0.5 bg-gradient-to-r from-[#FF6F3C]/30 via-[#FF6F3C]/60 to-[#FF6F3C]/30" />
+          <div className="hidden md:block absolute top-10 left-[calc(16.67%+2rem)] right-[calc(16.67%+2rem)] h-0.5 bg-gradient-to-r from-[#F46525]/30 via-[#F46525]/60 to-[#F46525]/30" />
 
           {steps.map((step, i) => (
             <div key={step.number} className="relative">
               {/* Step number */}
               <div className="w-20 h-20 rounded-2xl bg-[#0F172A] flex items-center justify-center mb-6 relative z-10">
-                <span className="text-[#FF6F3C] font-black text-2xl">
+                <span className="text-[#F46525] font-black text-2xl">
                   {step.number}
                 </span>
               </div>
@@ -60,13 +60,13 @@ export default function HowItWorksSection() {
               <p className="text-slate-500 text-base leading-relaxed mb-3">
                 {step.description}
               </p>
-              <p className="text-sm text-[#FF6F3C] font-medium">
+              <p className="text-sm text-[#F46525] font-medium">
                 {step.detail}
               </p>
 
               {/* Mobile connector */}
               {i < steps.length - 1 && (
-                <div className="md:hidden w-0.5 h-8 bg-[#FF6F3C]/30 ml-10 mt-6" />
+                <div className="md:hidden w-0.5 h-8 bg-[#F46525]/30 ml-10 mt-6" />
               )}
             </div>
           ))}

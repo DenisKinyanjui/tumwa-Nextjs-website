@@ -23,12 +23,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <span className="w-9 h-9 rounded-xl bg-[#FF6F3C] flex items-center justify-center text-white text-base font-black">
-                T
-              </span>
-              <span className="text-white font-bold text-2xl tracking-tight">
-                tumwa<span className="text-[#FF6F3C]">.</span>
-              </span>
+              <img
+            src="/images/logowhite.svg"
+            alt="Tumwa Logo"
+            className="w-32 h-32 sm:w-36 sm:h-36 object-contain"
+          />
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs mb-6">
               Nairobi&apos;s errand platform. Send tasks to trusted runners near
@@ -68,7 +67,7 @@ export default function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#FF6F3C] text-slate-400 hover:text-white flex items-center justify-center"
+                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-[#F46525] text-slate-400 hover:text-white flex items-center justify-center"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -85,7 +84,7 @@ export default function Footer() {
               </h3>
               <ul className="space-y-3">
                 {links.map((link) => (
-                  <li key={link.href}>
+                  <li key={link.label}>
                     <Link
                       href={link.href}
                       className="text-sm text-slate-400 hover:text-white"

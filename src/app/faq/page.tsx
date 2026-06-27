@@ -125,7 +125,7 @@ export default function FAQPage() {
       {/* Header */}
       <section className="bg-[#0F172A] pt-20 pb-24">
         <div className="max-w-6xl mx-auto px-5">
-          <p className="text-[#FF6F3C] text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-[#F46525] text-sm font-semibold uppercase tracking-widest mb-3">
             FAQ
           </p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-5 max-w-2xl leading-tight">
@@ -133,7 +133,7 @@ export default function FAQPage() {
           </h1>
           <p className="text-slate-400 text-xl max-w-xl leading-relaxed">
             If your question isn&apos;t here, you can{" "}
-            <Link href="/contact" className="text-[#FF6F3C] hover:underline">
+            <Link href="/contact" className="text-[#F46525] hover:underline">
               reach us directly
             </Link>
             .
@@ -161,7 +161,7 @@ export default function FAQPage() {
                           {item.q}
                         </span>
                         <svg
-                          className="w-5 h-5 text-[#FF6F3C] flex-shrink-0 group-open:rotate-180 transition-transform duration-200"
+                          className="w-5 h-5 text-[#F46525] flex-shrink-0 group-open:rotate-180 transition-transform duration-200"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -194,7 +194,7 @@ export default function FAQPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#FF6F3C] hover:bg-[#e55a28] text-white font-semibold rounded-xl shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#F46525] hover:bg-[#e55a28] text-white font-semibold rounded-xl shadow-sm"
           >
             Contact us
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

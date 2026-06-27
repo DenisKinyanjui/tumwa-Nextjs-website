@@ -7,7 +7,7 @@ const features = [
     ),
     title: "Verified Runners",
     body: "Every runner is vetted before they go live. Community ratings keep standards high — your errand goes to someone with a real reputation to protect.",
-    color: "text-[#FF6F3C] bg-[#FF6F3C]/10",
+    color: "text-[#F46525] bg-[#F46525]/10",
   },
   {
     icon: (
@@ -17,7 +17,7 @@ const features = [
     ),
     title: "M-Pesa & Card Payments",
     body: "Pay through M-Pesa or card. No cash changes hands during the errand — funds are held securely and released when you confirm completion.",
-    color: "text-[#2E8B57] bg-[#2E8B57]/10",
+    color: "text-[#248249] bg-[#248249]/10",
   },
   {
     icon: (
@@ -48,7 +48,7 @@ export default function FeaturesSection() {
       <div className="max-w-6xl mx-auto px-5">
         {/* Header */}
         <div className="max-w-xl mb-16">
-          <p className="text-[#FF6F3C] text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-[#F46525] text-sm font-semibold uppercase tracking-widest mb-3">
             Why Tumwa
           </p>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] leading-tight mb-4">

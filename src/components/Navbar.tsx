@@ -40,12 +40,12 @@ export default function Navbar() {
           className="flex items-center gap-2 font-bold text-2xl tracking-tight"
           aria-label="Tumwa Home"
         >
-          <span className="w-8 h-8 rounded-xl bg-[#FF6F3C] flex items-center justify-center text-white text-sm font-black">
-            T
-          </span>
-          <span className="text-[#0F172A]">
-            tumwa<span className="text-[#FF6F3C]">.</span>
-          </span>
+          <img
+            src="/images/logo.svg"
+            alt="Tumwa Logo"
+            className="w-32 h-32 sm:w-36 sm:h-36 object-contain"
+          />
+         
         </Link>
 
         {/* Desktop Nav */}
@@ -56,7 +56,7 @@ export default function Navbar() {
               href={link.href}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                 pathname === link.href
-                  ? "bg-[#FF6F3C]/10 text-[#FF6F3C]"
+                  ? "bg-[#F46525]/10 text-[#F46525]"
                   : "text-slate-600 hover:text-[#0F172A] hover:bg-slate-100"
               }`}
             >
@@ -69,13 +69,13 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <Link
             href="/become-a-runner"
-            className="text-sm font-medium text-[#2E8B57] hover:text-[#236b42]"
+            className="text-sm font-medium text-[#248249] hover:text-[#236b42]"
           >
             Earn as a runner
           </Link>
           <Link
             href="#download"
-            className="px-4 py-2 bg-[#FF6F3C] hover:bg-[#e55a28] text-white text-sm font-semibold rounded-xl shadow-sm"
+            className="px-4 py-2 bg-[#F46525] hover:bg-[#e55a28] text-white text-sm font-semibold rounded-xl shadow-sm"
           >
             Download App
           </Link>
@@ -116,7 +116,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                   pathname === link.href
-                    ? "bg-[#FF6F3C]/10 text-[#FF6F3C]"
+                    ? "bg-[#F46525]/10 text-[#F46525]"
                     : "text-slate-700 hover:bg-slate-100"
                 }`}
               >
@@ -126,13 +126,13 @@ export default function Navbar() {
             <div className="pt-3 mt-1 border-t border-slate-100 flex flex-col gap-2">
               <Link
                 href="/become-a-runner"
-                className="px-4 py-3 rounded-xl text-sm font-semibold text-[#2E8B57] bg-[#2E8B57]/10 text-center"
+                className="px-4 py-3 rounded-xl text-sm font-semibold text-[#248249] bg-[#248249]/10 text-center"
               >
                 Earn as a runner
               </Link>
               <Link
                 href="#download"
-                className="px-4 py-3 rounded-xl text-sm font-semibold text-white bg-[#FF6F3C] text-center"
+                className="px-4 py-3 rounded-xl text-sm font-semibold text-white bg-[#F46525] text-center"
               >
                 Download App
               </Link>

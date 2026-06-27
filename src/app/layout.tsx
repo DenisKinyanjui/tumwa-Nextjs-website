@@ -12,6 +12,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/images/favicon.svg",
+  },
   title: "Tumwa App – Errand Services in Nairobi",
   description:
     "Send errands, deliveries, and tasks across Nairobi using trusted, verified runners. Fast, secure, and reliable. Download Tumwa on Android or iOS.",

@@ -105,15 +105,15 @@ export default function BecomeARunnerPage() {
     <>
       {/* Hero */}
       <section className="bg-[#0F172A] pt-20 pb-24 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#2E8B57] opacity-[0.06] blur-[100px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#248249] opacity-[0.06] blur-[100px] pointer-events-none" />
         <div className="max-w-6xl mx-auto px-5 relative">
-          <p className="text-[#2E8B57] text-sm font-semibold uppercase tracking-widest mb-3">
+          <p className="text-[#248249] text-sm font-semibold uppercase tracking-widest mb-3">
             For Runners
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5 max-w-2xl">
             Your neighbourhood.
             <br />
-            <span className="text-[#2E8B57]">Your income.</span>
+            <span className="text-[#248249]">Your income.</span>
           </h1>
           <p className="text-slate-400 text-xl leading-relaxed max-w-xl mb-10">
             Join Tumwa as a runner and start earning from errands near you.
@@ -143,7 +143,7 @@ export default function BecomeARunnerPage() {
                 className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3"
               >
                 <p className="text-slate-600 text-base">{tier.label}</p>
-                <p className="text-[#2E8B57] font-extrabold text-xl sm:text-2xl whitespace-nowrap">
+                <p className="text-[#248249] font-extrabold text-xl sm:text-2xl whitespace-nowrap">
                   {tier.range}
                   <span className="text-slate-400 text-sm font-normal"> /day</span>
                 </p>
@@ -151,7 +151,7 @@ export default function BecomeARunnerPage() {
             ))}
           </div>
 
-          <div className="bg-[#2E8B57]/10 border border-[#2E8B57]/25 rounded-2xl p-6 text-sm text-slate-600 leading-relaxed">
+          <div className="bg-[#248249]/10 border border-[#248249]/25 rounded-2xl p-6 text-sm text-slate-600 leading-relaxed">
             <strong className="text-[#0F172A]">Note:</strong> These are
             estimates based on completed errands in Nairobi. Actual earnings
             depend on your location, the hours you run, and your rating. Tumwa
@@ -177,7 +177,7 @@ export default function BecomeARunnerPage() {
                 key={b.title}
                 className="rounded-2xl bg-[#F8FAFC] border border-slate-100 p-6"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#2E8B57]/10 flex items-center justify-center text-[#2E8B57] mb-5">
+                <div className="w-12 h-12 rounded-xl bg-[#248249]/10 flex items-center justify-center text-[#248249] mb-5">
                   {b.icon}
                 </div>
                 <h3 className="text-[#0F172A] font-bold text-base mb-2">
@@ -205,8 +205,8 @@ export default function BecomeARunnerPage() {
               <ul className="space-y-4">
                 {requirements.map((req) => (
                   <li key={req} className="flex items-start gap-3">
-                    <div className="w-6 h-6 rounded-full bg-[#2E8B57]/25 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <svg className="w-3.5 h-3.5 text-[#2E8B57]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <div className="w-6 h-6 rounded-full bg-[#248249]/25 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3.5 h-3.5 text-[#248249]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                       </svg>
                     </div>
@@ -252,7 +252,7 @@ export default function BecomeARunnerPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#2E8B57]">
+      <section className="py-20 bg-[#248249]">
         <div className="max-w-3xl mx-auto px-5 text-center">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-5">
             Ready to start running?
