@@ -76,7 +76,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Link Columns */}
+          {/* Link Column */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
               <h3 className="text-white text-sm font-semibold mb-4 tracking-wide">
